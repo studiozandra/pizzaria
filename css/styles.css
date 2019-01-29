@@ -1,12 +1,17 @@
 body{
-    background-color: #222222;
-    background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222) 0 / 15px 15px;
+    background-color: #220011;
+    
 } 
 /* inspired by https://codepen.io/FelixRilling/pen/qzfoc */
+
+
 
 a:active {color: rgb(240, 239, 239);}
 a:visited {color: rgb(240, 239, 239);}
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
 
 li{
     list-style-type: none;
@@ -14,7 +19,8 @@ li{
 }
 
 .topmenu{ 
-    font: 20px "Warnes", Helvetica, sans-serif !important; 
+    font: 20px Helvetica, sans-serif; 
+    /* "Warnes", */
     position: fixed;
     top: 0;
     min-height: 20px;
@@ -22,13 +28,93 @@ li{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    @media (max-width: 600px) {
-      flex-wrap: wrap;
-    }
-  } 
+    display: inline-block;
+
+    
+} 
 
 #content{
+    padding-top: 25px;
     text-align: center;
+    margin: 25px;
+    position: inherit;
+
+}
+
+#slice {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    z-index: 3;
+}
+.name{
+    font: 70px "Warnes", Helvetica, sans-serif;
+    color: rgb(250, 76, 76);
+    
+}
+.tagline{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(250, 76, 76);
+}
+.pizza {
+    font-size: 24px;
+
+}
+
+.today{
+    font-size: 24px; 
+    color: antiquewhite;   
+}
+.pizzaName{
+    color: antiquewhite;
+}
+.description{
+    
+}
+.price{
+    font: 18px  Helvetica, sans-serif;
+}
+
+.sectionTitle{
+    font: 30px "Warnes", Helvetica, sans-serif;
+}
+#menu{
+    background-color: #770000;
+    border-radius: 20px;
+    padding: 15px 20px;
+    margin: 25px;
+    color: #ee9900;
+    width: 80%;
+    text-align: center;
+    
+}
+
+#subscribe{
+    background-color: #ee9900;
+    border-radius: 20px;
+    padding: 15px 20px;
+    margin: 25px;
+    width: 80%;
+
+}
+.deal{
+    color: #770000;
+}
+#visit{
+    background-color: #884411;
+    border-radius: 20px;
+    padding: 15px 20px;
+    margin: 25px;
+    width: 80%;
+    
+}
+
+.map{
+    /* position: absolute; */
+    float:right
+}
+#footer{
+    color: #884411;
 }
 
 .button, #guide{
@@ -56,4 +142,4 @@ li{
   
   .button:hover , #guide:hover{
     text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
-  }
+}
