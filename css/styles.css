@@ -102,6 +102,7 @@ li{
 }
 #visit{
     background-color: #884411;
+    display: inline;
     border-radius: 20px;
     padding: 15px 20px;
     margin: 25px;
